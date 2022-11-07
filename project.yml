@@ -1,0 +1,19 @@
+name: SlideKit-Demo
+packages:
+  SlideKit:
+    url: https://github.com/mtj0928/SlideKit
+    from: 0.2.0
+targets:
+  SlideKit-Demo:
+    type: application
+    settings:
+      base:
+        INFOPLIST_FILE: SlideKit-Demo/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.github.mtj0928.SlideKit.demo.SlideKit-Demo
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
+    platform: macOS
+    deploymentTarget: "12.0"
+    sources: [SlideKit-Demo]
+    dependencies:
+      - package: SlideKit
